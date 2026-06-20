@@ -1,0 +1,38 @@
+{
+  "name": "codebuddy-switch",
+  "displayName": "codebuddy-switch",
+  "description": "switch codebuddy model presets from the vscode status bar.",
+  "version": "1.0.0",
+  "publisher": "DangoRyn",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DangoRyn/vscode-codebuddy-switch.git"
+  },
+  "engines": {
+    "vscode": "^1.70.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "keywords": [
+    "codebuddy",
+    "model-switcher",
+    "ai"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "modelSwitcher.pick",
+        "title": "切换 CodeBuddy 模型"
+      },
+      {
+        "command": "modelSwitcher.resetToDefault",
+        "title": "重置为 CodeBuddy 默认模型"
+      }
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "my-custom-model",
+    "label": "My Model",
+    "description": "200K 输入 / 8K 输出",
+    "detail": "api.example.com",
+    "name": "My Custom Model",
+    "vendor": "Custom",
+    "url": "https://api.example.com/v1/chat/completions",
+    "apiKey": "YOUR_API_KEY",
+    "maxInputTokens": 200000,
+    "maxOutputTokens": 8192,
+    "supportsToolCall": true,
+    "supportsImages": false,
+    "supportsReasoning": true
+  }
+]
