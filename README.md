@@ -4,7 +4,7 @@
 
 ## why
 
-vscode 版 codebuddy 的自定义模型通过 `~/.codebuddy/models.json` 配置，但该文件**只支持保留一个模型**。当你配置多个模型时（如 GLM 和火山 Ark），后写入的会覆盖前一个，导致无法在同一工作区内快速切换。
+vscode 版 codebuddy 的自定义模型通过 `~/.codebuddy/models.json` 配置，但该文件**只支持保留一个模型**。当你配置多个模型时，后写入的会覆盖前一个，导致无法在同一工作区内快速切换。
 
 `codebuddy-switch` 在状态栏提供一键切换能力，让你在多个模型预设之间随时切换，也能一键回到 CodeBuddy 官方默认模型。
 
@@ -69,14 +69,6 @@ cp presets.example.json presets.json
 ```
 
 `id` 需全局唯一，也是最终写入 `models.json` 的模型标识。参考 `presets.example.json` 获取完整示例。
-
-## supported platforms
-
-任何兼容 OpenAI Chat Completions API 的模型提供商：
-- 智谱 GLM Coding Plan
-- 火山引擎 Ark
-- DeepSeek
-- 其他自部署/第三方 API
 
 ## license
 
