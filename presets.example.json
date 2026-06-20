@@ -1,10 +1,9 @@
 [
   {
-    "id": "my-custom-model",
-    "label": "My Model",
+    "id": "my-model",
+    "name": "My Model",
     "description": "200K 输入 / 8K 输出",
     "detail": "api.example.com",
-    "name": "My Custom Model",
     "vendor": "Custom",
     "url": "https://api.example.com/v1/chat/completions",
     "apiKey": "YOUR_API_KEY",

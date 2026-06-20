@@ -43,8 +43,8 @@ function refreshStatusBar() {
   }
   const preset = presets.find((p) => p.id === cur);
   if (preset) {
-    statusBarItem.text = `$(zap) ${preset.label}`;
-    statusBarItem.tooltip = `当前: ${preset.label}\n${preset.description}\n点击切换`;
+    statusBarItem.text = `$(zap) ${preset.name}`;
+    statusBarItem.tooltip = `当前: ${preset.name}\n${preset.description}\n点击切换`;
     statusBarItem.backgroundColor = new vscode.ThemeColor(
       "statusBarItem.warningBackground"
     );
@@ -115,7 +115,7 @@ function activate(context) {
       }
 
       const items = presets.map((p) => ({
-        label: p.label,
+        label: p.name,
         description: p.description,
         detail: p.detail,
         preset: p,
